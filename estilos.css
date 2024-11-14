@@ -1,6 +1,6 @@
 
 body{
-    background-color: #091057;
+    background-color: #276bc4;
 }
 a{
     text-decoration: none;
@@ -9,12 +9,12 @@ a{
 h1{
     text-align: center;
     font-size: 4rem;
-    color: #DBD3D3;
+    color:  aliceblue;
 }
 h2 {
     text-align: center;
     font-size: 3rem;
-    color: #DBD3D3;
+    color:  aliceblue;
 }
 .bento{
     display: grid;
@@ -25,7 +25,7 @@ h2 {
 
 .grid{
 
-    background-color: #024CAA;
+    background-color: #012949;
     padding: 0em;
     border-radius: .5em;
     text-align: center;
@@ -48,7 +48,7 @@ h2 {
 }
 
 .grid:hover {
-    background-color: #EC8305;
+    background-color: #8405ec;
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
