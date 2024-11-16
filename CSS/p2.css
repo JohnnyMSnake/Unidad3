@@ -29,3 +29,14 @@ form{
     align-content: center;
     border-radius: 25px;
 }
+@media (max-width: 768px) {
+    label{
+        font-size: 10px;
+    }
+    input{
+        width: 130px;
+    }
+    button{
+        font-size: 10px;
+    }
+}
