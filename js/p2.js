@@ -8,6 +8,6 @@ function handleSumbit(event){
     let confirmacion = prompt("Los datos que ingreso son correctos? ingrese 'si' si lo estan ")
     if(confirmacion === "si"){
         const form = new FormData(this)
-        alert("hola " + form.get('nombre') + " tu edad es " + form.get('edad') + " y tu pais de residencia es " + form.get('pais') + " UwU")
+        alert("hola " + form.get('nombre') + " tu edad es " + form.get('edad') + " años y tu pais de residencia es " + form.get('pais') + " UwU")
     }
 }
