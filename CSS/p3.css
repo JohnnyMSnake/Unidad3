@@ -1,0 +1,31 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color:  #276bc4;
+    align-items: center;
+    align-content: center;
+}
+body div{
+    grid-column: 2/3;
+}
+h1{
+    text-align: center;
+    color: aliceblue;
+    font-size: 50px;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    label{
+        font-size: 10px;
+    }
+    input{
+        width: 130px;
+    }
+    button{
+        font-size: 10px;
+    }
+}
