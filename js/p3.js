@@ -1,11 +1,35 @@
 do{
-let datos = prompt("Ingrese su nombre y su actividad favorita: ");
-let confirmacion = confirm("Los datos que ingreso son correctos?");
-    if(confirmacion){
-        alert("Los datos ingresados se guardaron correctamente");
-        alert("La informacion que ingreso es: " + datos);
+    pedirDatos();
+    if(confirmacion()){
+        alertaIngreso();
     } else{
-        alert("Se borraron los datos");
+        alertaBorrado();
     }
     confirmacion2 = confirm("Desea ingresar mas datos?");
 }while(confirmacion2);
+despedida();
+
+function pedirDatos(){
+    let datos = prompt("Bienvenido, ingrese su nombre y su actividad favorita: ");
+}
+
+function confirmacion(){
+    let confirmacion = confirm("Los datos que ingreso son correctos?");
+    return confirmacion;
+}
+
+function alertaIngreso(){
+    alert("Los datos ingresados se guardaron correctamente");
+}
+
+function alertaBorrado(){
+    alert("Se borraron los datos");
+}
+
+function confirmacion2(){
+    confirm("Desea ingresar mas datos?");
+}
+
+function despedida(){
+    alert("Todos los datos se ingresaron correctamente, fin de ejecucion UwU");
+}
