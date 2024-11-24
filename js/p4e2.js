@@ -14,10 +14,16 @@ function handleSumbit(event){
             cal5 : "",
             cal6 : "",
             cal7 : "",
-            calcular : function(){
-                let promedio = (Number(this.cal1) + Number(this.cal2) + Number(this.cal3) + Number(this.cal4) + Number(this.cal5) + Number(this.cal6) + Number(this.cal7))/7
-                let resultado = document.getElementById('promedio')
-                resultado.innerHTML = "Promedio: "+promedio
+            suma : function(){
+                let suma = (Number(this.cal1) + Number(this.cal2) + Number(this.cal3) + Number(this.cal4) + Number(this.cal5) + Number(this.cal6) + Number(this.cal7));
+                return suma;
+            },
+            promedio : function(){
+                let promedio = (this.suma())/7;
+                let resultadoSuma = document.getElementById('suma');
+                resultadoSuma.innerHTML = "Suma: " + this.suma();
+                let resultado = document.getElementById('promedio');
+                resultado.innerHTML = "Promedio: "+ promedio
             }
         }
         calificaciones.cal1 = document.getElementById('c1').value
@@ -27,7 +33,7 @@ function handleSumbit(event){
         calificaciones.cal5 = document.getElementById('c5').value
         calificaciones.cal6 = document.getElementById('c6').value
         calificaciones.cal7 = document.getElementById('c7').value
-        calificaciones.calcular()
+        calificaciones.promedio()
 
     }else{
         alert("Ejecucion cancelada")
