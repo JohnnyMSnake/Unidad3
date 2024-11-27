@@ -14,6 +14,9 @@ function handleClick(event){
     grid.forEach((grids) => {
         grids.style.backgroundColor = getRandomColor(); // Cambia el color de cada <p>
     });
+
+    let bento = document.querySelector('.bento');
+    bento.style.gridTemplateColumns = 'repeat(2, 1fr)';
 }
 
 function getRandomColor() {
