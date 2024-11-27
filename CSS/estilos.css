@@ -66,6 +66,13 @@ footer div{
     grid-column: 2/3;
     text-align: center;
 }
+button{
+    background-color: #8405ec;
+    color: white;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 20px;
+}
 
 
 /* Aquí no debe haber reglas de grid-column fuera de los media queries */
