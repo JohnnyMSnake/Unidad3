@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/p7.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practica 7</h1>
+    <h2>Menu de navegacion</h2>
+    <p>Se podra realizar la seleccion de un hijo de otro elemento que ya es un hijo?</p>
+    <p>Si se puede seleccionar un hijo de un elemento que ya es hijo de otro usando JavaScript y el DOM. Para hacerlo, se puede usar selectores como "querySelector" o métodos como "children" y navegar por el árbol del DOM.</p>
+    <br>
+   <p>
+        // Seleccionamos el padre principal
+        const padre = document.querySelector('.padre');
+    </p>
+    <br>
+    <p>
+        // Seleccionamos el hijo dentro del elemento padre
+        const hijo = padre.querySelector('.hijo');
+    </p>
+    <br>
+    <p>
+        // Y si el hijo tiene otro hijo...
+        const nieto = hijo.querySelector('.nieto');
+    </p>
+    <div id="Contenido">
+        <div class="Peliculas">
+            <a href="https://www.youtube.com/watch?v=kEOctaHwmbc">Perfect Soul</a>
+        </div>
+        <div class="Peliculas">
+            <a href="https://www.youtube.com/watch?v=5x_pZoYwc78">Stroke God, Millionaire</a>
+        </div>
+        <div class="Peliculas">
+            <a href="https://www.youtube.com/watch?v=kgPt2mZooss">In due Time</a>
+        </div>
+        <div class="Peliculas">
+            <a href="https://www.youtube.com/watch?v=lxfUzjkKxVI">Shapeshifter</a>
+        </div>
+        <div class="Peliculas">
+            <a href="https://www.youtube.com/watch?v=spCmStMOiHE">Make Total Destroy</a>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <button id="Agregar">Agregar pelicula</button>
+            <button id="Eliminar">Eliminar pelicula</button>
+        </div>
+    </footer>  
+</body>
+<script src="../js/p7.js"></script>
+</html>
