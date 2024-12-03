@@ -27,17 +27,16 @@ function sumarClick(event){
 
 function compararClick(event){
     let comparar1 = Number(document.getElementById('Comparar1').value);
-    let comparar2 = Number(document.getElementById('Comparar2').value);
 
-    let comparacion = (comp1, comp2) => {
-        if(comp1 > comp2){
-            return comp1
+    let comparacion = (comp1) => {
+        if((comp1 % 2) === 0){
+            return "Es par";
         } else{
-            return comp2
+            return "Es impar";
         }
     }
     let Resultado = document.getElementById('Resultado_comparar');
-    Resultado.innerHTML = "El numero mayor es: "+comparacion(comparar1, comparar2);
+    Resultado.innerHTML = "Resultado: "+comparacion(comparar1);
 }
 
 function mapClick(event){
